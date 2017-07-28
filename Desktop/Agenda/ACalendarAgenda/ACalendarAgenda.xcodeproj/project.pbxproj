@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7B1EBCD1F27580000B1CA23 /* AgendaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B1EBCC1F27580000B1CA23 /* AgendaInfo.m */; };
+		B7B1EBCF1F275CEA00B1CA23 /* AgendaDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B1EBCE1F275CEA00B1CA23 /* AgendaDatabase.m */; };
+		B7B1EBD41F27740300B1CA23 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1EBD31F27740300B1CA23 /* libsqlite3.0.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		B7B1EBD61F27741300B1CA23 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1EBD51F27741300B1CA23 /* libsqlite3.tbd */; };
+		B7EB25AC1F2730D80090AF92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25AB1F2730D80090AF92 /* main.m */; };
+		B7EB25AF1F2730D80090AF92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25AE1F2730D80090AF92 /* AppDelegate.m */; };
+		B7EB25B21F2730D80090AF92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25B11F2730D80090AF92 /* ViewController.m */; };
+		B7EB25B51F2730D80090AF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EB25B31F2730D80090AF92 /* Main.storyboard */; };
+		B7EB25B71F2730D80090AF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7EB25B61F2730D80090AF92 /* Assets.xcassets */; };
+		B7EB25BA1F2730D80090AF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EB25B81F2730D80090AF92 /* LaunchScreen.storyboard */; };
+		B7EB25C51F2730D80090AF92 /* ACalendarAgendaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25C41F2730D80090AF92 /* ACalendarAgendaTests.m */; };
+		B7EB25F11F2730F10090AF92 /* ACalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25D01F2730F10090AF92 /* ACalendar+Deprecated.m */; };
+		B7EB25F21F2730F10090AF92 /* ACalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25D21F2730F10090AF92 /* ACalendar.m */; };
+		B7EB25F31F2730F10090AF92 /* ACalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25D41F2730F10090AF92 /* ACalendarAppearance.m */; };
+		B7EB25F41F2730F10090AF92 /* ACalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25D61F2730F10090AF92 /* ACalendarCalculator.m */; };
+		B7EB25F51F2730F10090AF92 /* ACalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25D81F2730F10090AF92 /* ACalendarCell.m */; };
+		B7EB25F61F2730F10090AF92 /* ACalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25DA1F2730F10090AF92 /* ACalendarCollectionView.m */; };
+		B7EB25F71F2730F10090AF92 /* ACalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25DC1F2730F10090AF92 /* ACalendarCollectionViewLayout.m */; };
+		B7EB25F81F2730F10090AF92 /* ACalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25DE1F2730F10090AF92 /* ACalendarConstants.m */; };
+		B7EB25F91F2730F10090AF92 /* ACalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25E01F2730F10090AF92 /* ACalendarDelegationFactory.m */; };
+		B7EB25FA1F2730F10090AF92 /* ACalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25E21F2730F10090AF92 /* ACalendarDelegationProxy.m */; };
+		B7EB25FB1F2730F10090AF92 /* ACalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25E51F2730F10090AF92 /* ACalendarExtensions.m */; };
+		B7EB25FC1F2730F10090AF92 /* ACalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25E71F2730F10090AF92 /* ACalendarHeaderView.m */; };
+		B7EB25FD1F2730F10090AF92 /* ACalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25E91F2730F10090AF92 /* ACalendarScopeHandle.m */; };
+		B7EB25FE1F2730F10090AF92 /* ACalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25EB1F2730F10090AF92 /* ACalendarStickyHeader.m */; };
+		B7EB25FF1F2730F10090AF92 /* ACalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25ED1F2730F10090AF92 /* ACalendarTransitionCoordinator.m */; };
+		B7EB26001F2730F10090AF92 /* ACalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EB25EF1F2730F10090AF92 /* ACalendarWeekdayView.m */; };
+		B7EB26011F2730F10090AF92 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7EB25F01F2730F10090AF92 /* Info.plist */; };
+		B7FEA3F71F279ACB00C7B2AB /* Agenda.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B7FEA3F61F279ACB00C7B2AB /* Agenda.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7EB25C11F2730D80090AF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7EB259F1F2730D80090AF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7EB25A61F2730D80090AF92;
+			remoteInfo = ACalendarAgenda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7B1EBCC1F27580000B1CA23 /* AgendaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaInfo.m; sourceTree = "<group>"; };
+		B7B1EBCE1F275CEA00B1CA23 /* AgendaDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaDatabase.m; sourceTree = "<group>"; };
+		B7B1EBD01F275DB900B1CA23 /* AgendaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaInfo.h; sourceTree = "<group>"; };
+		B7B1EBD11F27620B00B1CA23 /* AgendaDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaDatabase.h; sourceTree = "<group>"; };
+		B7B1EBD31F27740300B1CA23 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B7B1EBD51F27741300B1CA23 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B7EB25A71F2730D80090AF92 /* ACalendarAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACalendarAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EB25AB1F2730D80090AF92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7EB25AD1F2730D80090AF92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7EB25AE1F2730D80090AF92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7EB25B01F2730D80090AF92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B7EB25B11F2730D80090AF92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7EB25B41F2730D80090AF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7EB25B61F2730D80090AF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7EB25B91F2730D80090AF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7EB25BB1F2730D80090AF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7EB25C01F2730D80090AF92 /* ACalendarAgendaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACalendarAgendaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EB25C41F2730D80090AF92 /* ACalendarAgendaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACalendarAgendaTests.m; sourceTree = "<group>"; };
+		B7EB25C61F2730D80090AF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7EB25D01F2730F10090AF92 /* ACalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ACalendar+Deprecated.m"; sourceTree = "<group>"; };
+		B7EB25D11F2730F10090AF92 /* ACalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendar.h; sourceTree = "<group>"; };
+		B7EB25D21F2730F10090AF92 /* ACalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendar.m; sourceTree = "<group>"; };
+		B7EB25D31F2730F10090AF92 /* ACalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarAppearance.h; sourceTree = "<group>"; };
+		B7EB25D41F2730F10090AF92 /* ACalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarAppearance.m; sourceTree = "<group>"; };
+		B7EB25D51F2730F10090AF92 /* ACalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarCalculator.h; sourceTree = "<group>"; };
+		B7EB25D61F2730F10090AF92 /* ACalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarCalculator.m; sourceTree = "<group>"; };
+		B7EB25D71F2730F10090AF92 /* ACalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarCell.h; sourceTree = "<group>"; };
+		B7EB25D81F2730F10090AF92 /* ACalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarCell.m; sourceTree = "<group>"; };
+		B7EB25D91F2730F10090AF92 /* ACalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarCollectionView.h; sourceTree = "<group>"; };
+		B7EB25DA1F2730F10090AF92 /* ACalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarCollectionView.m; sourceTree = "<group>"; };
+		B7EB25DB1F2730F10090AF92 /* ACalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		B7EB25DC1F2730F10090AF92 /* ACalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		B7EB25DD1F2730F10090AF92 /* ACalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarConstants.h; sourceTree = "<group>"; };
+		B7EB25DE1F2730F10090AF92 /* ACalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarConstants.m; sourceTree = "<group>"; };
+		B7EB25DF1F2730F10090AF92 /* ACalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarDelegationFactory.h; sourceTree = "<group>"; };
+		B7EB25E01F2730F10090AF92 /* ACalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarDelegationFactory.m; sourceTree = "<group>"; };
+		B7EB25E11F2730F10090AF92 /* ACalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarDelegationProxy.h; sourceTree = "<group>"; };
+		B7EB25E21F2730F10090AF92 /* ACalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarDelegationProxy.m; sourceTree = "<group>"; };
+		B7EB25E31F2730F10090AF92 /* ACalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarDynamicHeader.h; sourceTree = "<group>"; };
+		B7EB25E41F2730F10090AF92 /* ACalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarExtensions.h; sourceTree = "<group>"; };
+		B7EB25E51F2730F10090AF92 /* ACalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarExtensions.m; sourceTree = "<group>"; };
+		B7EB25E61F2730F10090AF92 /* ACalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarHeaderView.h; sourceTree = "<group>"; };
+		B7EB25E71F2730F10090AF92 /* ACalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarHeaderView.m; sourceTree = "<group>"; };
+		B7EB25E81F2730F10090AF92 /* ACalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarScopeHandle.h; sourceTree = "<group>"; };
+		B7EB25E91F2730F10090AF92 /* ACalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarScopeHandle.m; sourceTree = "<group>"; };
+		B7EB25EA1F2730F10090AF92 /* ACalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarStickyHeader.h; sourceTree = "<group>"; };
+		B7EB25EB1F2730F10090AF92 /* ACalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarStickyHeader.m; sourceTree = "<group>"; };
+		B7EB25EC1F2730F10090AF92 /* ACalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		B7EB25ED1F2730F10090AF92 /* ACalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		B7EB25EE1F2730F10090AF92 /* ACalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACalendarWeekdayView.h; sourceTree = "<group>"; };
+		B7EB25EF1F2730F10090AF92 /* ACalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACalendarWeekdayView.m; sourceTree = "<group>"; };
+		B7EB25F01F2730F10090AF92 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FEA3F61F279ACB00C7B2AB /* Agenda.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Agenda.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7EB25A41F2730D80090AF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B1EBD61F27741300B1CA23 /* libsqlite3.tbd in Frameworks */,
+				B7B1EBD41F27740300B1CA23 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7EB25BD1F2730D80090AF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B1EBCB1F2757A700B1CA23 /* AgendaDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				B7B1EBD01F275DB900B1CA23 /* AgendaInfo.h */,
+				B7B1EBCC1F27580000B1CA23 /* AgendaInfo.m */,
+				B7B1EBD11F27620B00B1CA23 /* AgendaDatabase.h */,
+				B7B1EBCE1F275CEA00B1CA23 /* AgendaDatabase.m */,
+			);
+			name = AgendaDatabase;
+			path = ACalendar;
+			sourceTree = "<group>";
+		};
+		B7B1EBD21F27740300B1CA23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B1EBD51F27741300B1CA23 /* libsqlite3.tbd */,
+				B7B1EBD31F27740300B1CA23 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7EB259E1F2730D80090AF92 = {
+			isa = PBXGroup;
+			children = (
+				B7B1EBCB1F2757A700B1CA23 /* AgendaDatabase */,
+				B7EB25CF1F2730F10090AF92 /* ACalendar */,
+				B7EB25A91F2730D80090AF92 /* ACalendarAgenda */,
+				B7EB25C31F2730D80090AF92 /* ACalendarAgendaTests */,
+				B7EB25A81F2730D80090AF92 /* Products */,
+				B7B1EBD21F27740300B1CA23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7EB25A81F2730D80090AF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB25A71F2730D80090AF92 /* ACalendarAgenda.app */,
+				B7EB25C01F2730D80090AF92 /* ACalendarAgendaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7EB25A91F2730D80090AF92 /* ACalendarAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB25AD1F2730D80090AF92 /* AppDelegate.h */,
+				B7EB25AE1F2730D80090AF92 /* AppDelegate.m */,
+				B7EB25B01F2730D80090AF92 /* ViewController.h */,
+				B7EB25B11F2730D80090AF92 /* ViewController.m */,
+				B7EB25B31F2730D80090AF92 /* Main.storyboard */,
+				B7EB25B61F2730D80090AF92 /* Assets.xcassets */,
+				B7EB25B81F2730D80090AF92 /* LaunchScreen.storyboard */,
+				B7EB25BB1F2730D80090AF92 /* Info.plist */,
+				B7EB25AA1F2730D80090AF92 /* Supporting Files */,
+			);
+			path = ACalendarAgenda;
+			sourceTree = "<group>";
+		};
+		B7EB25AA1F2730D80090AF92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7FEA3F61F279ACB00C7B2AB /* Agenda.sqlite */,
+				B7EB25AB1F2730D80090AF92 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7EB25C31F2730D80090AF92 /* ACalendarAgendaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB25C41F2730D80090AF92 /* ACalendarAgendaTests.m */,
+				B7EB25C61F2730D80090AF92 /* Info.plist */,
+			);
+			path = ACalendarAgendaTests;
+			sourceTree = "<group>";
+		};
+		B7EB25CF1F2730F10090AF92 /* ACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB25D01F2730F10090AF92 /* ACalendar+Deprecated.m */,
+				B7EB25D11F2730F10090AF92 /* ACalendar.h */,
+				B7EB25D21F2730F10090AF92 /* ACalendar.m */,
+				B7EB25D31F2730F10090AF92 /* ACalendarAppearance.h */,
+				B7EB25D41F2730F10090AF92 /* ACalendarAppearance.m */,
+				B7EB25D51F2730F10090AF92 /* ACalendarCalculator.h */,
+				B7EB25D61F2730F10090AF92 /* ACalendarCalculator.m */,
+				B7EB25D71F2730F10090AF92 /* ACalendarCell.h */,
+				B7EB25D81F2730F10090AF92 /* ACalendarCell.m */,
+				B7EB25D91F2730F10090AF92 /* ACalendarCollectionView.h */,
+				B7EB25DA1F2730F10090AF92 /* ACalendarCollectionView.m */,
+				B7EB25DB1F2730F10090AF92 /* ACalendarCollectionViewLayout.h */,
+				B7EB25DC1F2730F10090AF92 /* ACalendarCollectionViewLayout.m */,
+				B7EB25DD1F2730F10090AF92 /* ACalendarConstants.h */,
+				B7EB25DE1F2730F10090AF92 /* ACalendarConstants.m */,
+				B7EB25DF1F2730F10090AF92 /* ACalendarDelegationFactory.h */,
+				B7EB25E01F2730F10090AF92 /* ACalendarDelegationFactory.m */,
+				B7EB25E11F2730F10090AF92 /* ACalendarDelegationProxy.h */,
+				B7EB25E21F2730F10090AF92 /* ACalendarDelegationProxy.m */,
+				B7EB25E31F2730F10090AF92 /* ACalendarDynamicHeader.h */,
+				B7EB25E41F2730F10090AF92 /* ACalendarExtensions.h */,
+				B7EB25E51F2730F10090AF92 /* ACalendarExtensions.m */,
+				B7EB25E61F2730F10090AF92 /* ACalendarHeaderView.h */,
+				B7EB25E71F2730F10090AF92 /* ACalendarHeaderView.m */,
+				B7EB25E81F2730F10090AF92 /* ACalendarScopeHandle.h */,
+				B7EB25E91F2730F10090AF92 /* ACalendarScopeHandle.m */,
+				B7EB25EA1F2730F10090AF92 /* ACalendarStickyHeader.h */,
+				B7EB25EB1F2730F10090AF92 /* ACalendarStickyHeader.m */,
+				B7EB25EC1F2730F10090AF92 /* ACalendarTransitionCoordinator.h */,
+				B7EB25ED1F2730F10090AF92 /* ACalendarTransitionCoordinator.m */,
+				B7EB25EE1F2730F10090AF92 /* ACalendarWeekdayView.h */,
+				B7EB25EF1F2730F10090AF92 /* ACalendarWeekdayView.m */,
+				B7EB25F01F2730F10090AF92 /* Info.plist */,
+			);
+			path = ACalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7EB25A61F2730D80090AF92 /* ACalendarAgenda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7EB25C91F2730D80090AF92 /* Build configuration list for PBXNativeTarget "ACalendarAgenda" */;
+			buildPhases = (
+				B7EB25A31F2730D80090AF92 /* Sources */,
+				B7EB25A41F2730D80090AF92 /* Frameworks */,
+				B7EB25A51F2730D80090AF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACalendarAgenda;
+			productName = ACalendarAgenda;
+			productReference = B7EB25A71F2730D80090AF92 /* ACalendarAgenda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7EB25BF1F2730D80090AF92 /* ACalendarAgendaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7EB25CC1F2730D80090AF92 /* Build configuration list for PBXNativeTarget "ACalendarAgendaTests" */;
+			buildPhases = (
+				B7EB25BC1F2730D80090AF92 /* Sources */,
+				B7EB25BD1F2730D80090AF92 /* Frameworks */,
+				B7EB25BE1F2730D80090AF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7EB25C21F2730D80090AF92 /* PBXTargetDependency */,
+			);
+			name = ACalendarAgendaTests;
+			productName = ACalendarAgendaTests;
+			productReference = B7EB25C01F2730D80090AF92 /* ACalendarAgendaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7EB259F1F2730D80090AF92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Avik Niyogi";
+				TargetAttributes = {
+					B7EB25A61F2730D80090AF92 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					B7EB25BF1F2730D80090AF92 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7EB25A61F2730D80090AF92;
+					};
+				};
+			};
+			buildConfigurationList = B7EB25A21F2730D80090AF92 /* Build configuration list for PBXProject "ACalendarAgenda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7EB259E1F2730D80090AF92;
+			productRefGroup = B7EB25A81F2730D80090AF92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7EB25A61F2730D80090AF92 /* ACalendarAgenda */,
+				B7EB25BF1F2730D80090AF92 /* ACalendarAgendaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7EB25A51F2730D80090AF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7EB26011F2730F10090AF92 /* Info.plist in Resources */,
+				B7EB25BA1F2730D80090AF92 /* LaunchScreen.storyboard in Resources */,
+				B7EB25B71F2730D80090AF92 /* Assets.xcassets in Resources */,
+				B7EB25B51F2730D80090AF92 /* Main.storyboard in Resources */,
+				B7FEA3F71F279ACB00C7B2AB /* Agenda.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7EB25BE1F2730D80090AF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7EB25A31F2730D80090AF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7EB25F31F2730F10090AF92 /* ACalendarAppearance.m in Sources */,
+				B7EB25FC1F2730F10090AF92 /* ACalendarHeaderView.m in Sources */,
+				B7EB25B21F2730D80090AF92 /* ViewController.m in Sources */,
+				B7EB25F11F2730F10090AF92 /* ACalendar+Deprecated.m in Sources */,
+				B7EB25FF1F2730F10090AF92 /* ACalendarTransitionCoordinator.m in Sources */,
+				B7EB25F81F2730F10090AF92 /* ACalendarConstants.m in Sources */,
+				B7EB25AF1F2730D80090AF92 /* AppDelegate.m in Sources */,
+				B7EB25F61F2730F10090AF92 /* ACalendarCollectionView.m in Sources */,
+				B7EB25FE1F2730F10090AF92 /* ACalendarStickyHeader.m in Sources */,
+				B7EB25AC1F2730D80090AF92 /* main.m in Sources */,
+				B7EB26001F2730F10090AF92 /* ACalendarWeekdayView.m in Sources */,
+				B7B1EBCD1F27580000B1CA23 /* AgendaInfo.m in Sources */,
+				B7EB25F91F2730F10090AF92 /* ACalendarDelegationFactory.m in Sources */,
+				B7B1EBCF1F275CEA00B1CA23 /* AgendaDatabase.m in Sources */,
+				B7EB25FA1F2730F10090AF92 /* ACalendarDelegationProxy.m in Sources */,
+				B7EB25F21F2730F10090AF92 /* ACalendar.m in Sources */,
+				B7EB25FD1F2730F10090AF92 /* ACalendarScopeHandle.m in Sources */,
+				B7EB25FB1F2730F10090AF92 /* ACalendarExtensions.m in Sources */,
+				B7EB25F51F2730F10090AF92 /* ACalendarCell.m in Sources */,
+				B7EB25F71F2730F10090AF92 /* ACalendarCollectionViewLayout.m in Sources */,
+				B7EB25F41F2730F10090AF92 /* ACalendarCalculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7EB25BC1F2730D80090AF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7EB25C51F2730D80090AF92 /* ACalendarAgendaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7EB25C21F2730D80090AF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7EB25A61F2730D80090AF92 /* ACalendarAgenda */;
+			targetProxy = B7EB25C11F2730D80090AF92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7EB25B31F2730D80090AF92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7EB25B41F2730D80090AF92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7EB25B81F2730D80090AF92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7EB25B91F2730D80090AF92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7EB25C71F2730D80090AF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7EB25C81F2730D80090AF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7EB25CA1F2730D80090AF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ACalendarAgenda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avik.ACalendarAgenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7EB25CB1F2730D80090AF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ACalendarAgenda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avik.ACalendarAgenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7EB25CD1F2730D80090AF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ACalendarAgendaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avik.ACalendarAgendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACalendarAgenda.app/ACalendarAgenda";
+			};
+			name = Debug;
+		};
+		B7EB25CE1F2730D80090AF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ACalendarAgendaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avik.ACalendarAgendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACalendarAgenda.app/ACalendarAgenda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7EB25A21F2730D80090AF92 /* Build configuration list for PBXProject "ACalendarAgenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EB25C71F2730D80090AF92 /* Debug */,
+				B7EB25C81F2730D80090AF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7EB25C91F2730D80090AF92 /* Build configuration list for PBXNativeTarget "ACalendarAgenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EB25CA1F2730D80090AF92 /* Debug */,
+				B7EB25CB1F2730D80090AF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7EB25CC1F2730D80090AF92 /* Build configuration list for PBXNativeTarget "ACalendarAgendaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EB25CD1F2730D80090AF92 /* Debug */,
+				B7EB25CE1F2730D80090AF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7EB259F1F2730D80090AF92 /* Project object */;
+}
